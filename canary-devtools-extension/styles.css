@@ -3,6 +3,9 @@
 /* Optimized for Chrome Canary Channel v32
 /* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
 /*************************************************************************/
+.scroll-target {
+  -webkit-transform: translateZ(0);
+}
 .styles-section .properties .disabled,
 .styles-section .properties .not-parsed-ok {
   -webkit-transition: opacity 0.5s ease-in-out 0;
@@ -752,7 +755,6 @@ span.cm-token-highlight:before {
   padding-top: 6px !important;
   border-bottom: 1px solid #1d1d1d !important;
   box-shadow: inset 0 1px 0 #626262 !important;
-  background: -webkit-linear-gradient(#505050, #363636) !important;
 }
 #network-views .network-item-view .tabbed-pane-header {
   padding-top: 0 !important;
@@ -1435,6 +1437,7 @@ tr.selected .network-cell-subtitle {
 }
 .help-window-main,
 .help-window-main label:hover,
+.settings-tab.help-container label,
 .settings-tab .help-block label,
 .settings-tab .help-block label:hover,
 .settings-tab .help-block td {
@@ -1488,42 +1491,6 @@ tr.selected .network-cell-subtitle {
 }
 .help-window-main .file-system-path-name {
   color: #89f5a2 !important;
-}
-/***************************************************
-/* Dialog Box [Help]
-****************************************************/
-#glass-pane {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
-.settings-dialog {
-  border: 1px solid #444 !important;
-  background-color: #333 !important;
-  border-radius: 4px !important;
-}
-.dialog-contents .header {
-  color: #ccc !important;
-}
-.dialog-contents .block-header {
-  color: #89f5a2 !important;
-}
-.settings-dialog .settings-list-container {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.settings-dialog .settings-list {
-  border: 1px solid #484848 !important;
-  border-top: 2px solid #282828 !important;
-  border-bottom: 1px solid #585858 !important;
-  border-radius: 2px !important;
-}
-.settings-dialog .settings-list-item,
-.settings-dialog .settings-list-item:hover {
-  background-color: #444 !important;
-  border-top: 1px solid #4e4e4e !important;
-  border-bottom: none !important;
-  color: #ccc!important;
-}
-.settings-dialog .file-mappings-list .settings-list-item:first-child {
-  border-top: none !important;
 }
 /***************************************************
 /* Dialog Box [Help]
